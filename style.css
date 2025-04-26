@@ -1,0 +1,101 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: #0d47a1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(13,71,161,0.8), rgba(13,71,161,0.8)), url('hero-bg.jpg') no-repeat center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: white;
+  color: #0d47a1;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e3f2fd;
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+}
